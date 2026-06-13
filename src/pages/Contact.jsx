@@ -13,9 +13,11 @@ export default function Contact() {
   const [serviceType, setServiceType] = useState('general');
   const [message, setMessage] = useState('');
   
-  // Validation States
+  // Validation and Submission States
   const [errors, setErrors] = useState({});
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   // Load subject from query parameter if present
   useEffect(() => {
@@ -34,9 +36,10 @@ export default function Contact() {
   }, [location]);
 
   // Handle submit form
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = {};
+    setSubmitError('');
 
     if (!name.trim()) {
       newErrors.name = 'กรุณากรอกชื่อ-นามสกุล';
@@ -58,25 +61,49 @@ export default function Contact() {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-    } else {
-      setErrors({});
-      setIsSuccess(true);
-      
-      // Log mock contact message to console for development verification
-      console.log('Contact message received:', {
-        name,
-        phone,
-        email,
-        serviceType: BRAND_CONFIG.services.find(s => s.id === serviceType)?.title || 'ทั่วไป',
-        message
+      return;
+    }
+
+    setErrors({});
+    setIsSubmitting(true);
+
+    const serviceTitle = BRAND_CONFIG.services.find(s => s.id === serviceType)?.title || 'ทั่วไป';
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          serviceType,
+          serviceTitle,
+          message,
+        }),
       });
 
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาลองใหม่อีกครั้ง');
+      }
+
+      setIsSuccess(true);
+      
       // Clear Form Fields
       setName('');
       setPhone('');
       setEmail('');
       setServiceType('general');
       setMessage('');
+    } catch (err) {
+      console.error('Submit form error:', err);
+      setSubmitError(err.message || 'เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์ กรุณาลองใหม่อีกครั้ง');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -196,6 +223,7 @@ export default function Contact() {
                   placeholder="เช่น สมชาย สุขสบาย"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  disabled={isSubmitting}
                 />
                 {errors.name && <span className="error-text">{errors.name}</span>}
               </div>
@@ -210,6 +238,7 @@ export default function Contact() {
                     placeholder="เช่น 0812345678"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
+                    disabled={isSubmitting}
                   />
                   {errors.phone && <span className="error-text">{errors.phone}</span>}
                 </div>
@@ -223,6 +252,7 @@ export default function Contact() {
                     placeholder="เช่น example@domain.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    disabled={isSubmitting}
                   />
                   {errors.email && <span className="error-text">{errors.email}</span>}
                 </div>
@@ -235,6 +265,7 @@ export default function Contact() {
                   className="form-control"
                   value={serviceType}
                   onChange={(e) => setServiceType(e.target.value)}
+                  disabled={isSubmitting}
                 >
                   <option value="general">สอบถามบริการทั่วไป / ประเมินราคางานช่าง</option>
                   {BRAND_CONFIG.services.map(s => (
@@ -251,12 +282,53 @@ export default function Contact() {
                   placeholder="เช่น ต้องการเพิ่มจุดปลั๊กไฟห้องรับแขก 2 จุด หรือ แจ้งตู้ไฟที่บ้านทริปบ่อยครั้ง..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  disabled={isSubmitting}
                 />
                 {errors.message && <span className="error-text">{errors.message}</span>}
               </div>
 
-              <button type="submit" className="btn btn-dark" style={{ width: '100%', padding: '1rem', marginTop: '1rem' }}>
-                <Send size={18} /> ส่งข้อมูลนัดหมายช่าง
+              {submitError && (
+                <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '0.5rem', 
+                  backgroundColor: '#fef2f2', 
+                  border: '1px solid #fee2e2', 
+                  color: '#991b1b', 
+                  padding: '0.75rem 1rem', 
+                  borderRadius: '6px', 
+                  marginBottom: '1rem',
+                  fontSize: '0.9rem'
+                }}>
+                  <AlertCircle size={16} style={{ flexShrink: 0 }} />
+                  <span>{submitError}</span>
+                </div>
+              )}
+
+              <button 
+                type="submit" 
+                className="btn btn-dark" 
+                style={{ width: '100%', padding: '1rem', marginTop: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <span className="spinner-loader" style={{
+                      width: '18px',
+                      height: '18px',
+                      border: '2px solid rgba(255,255,255,0.3)',
+                      borderTop: '2px solid #fff',
+                      borderRadius: '50%',
+                      animation: 'spin 0.8s linear infinite',
+                      display: 'inline-block'
+                    }}></span>
+                    กำลังส่งข้อมูล...
+                  </>
+                ) : (
+                  <>
+                    <Send size={18} /> ส่งข้อมูลนัดหมายช่าง
+                  </>
+                )}
               </button>
             </form>
           </div>

@@ -28,3 +28,6 @@ debug/*.png
 debug/logo-pack/
 pnpm-workspace.yaml
 
+# Local Environment Secrets
+.dev.vars
+
