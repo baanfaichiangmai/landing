@@ -49,7 +49,7 @@ export const BRAND_CONFIG = {
       shortDesc: "เดินสายไฟฟ้าและสายแลนภายในบ้าน/สำนักงาน ทั้งแบบเดินลอยและฝังผนังอย่างเป็นระเบียบเรียบร้อย",
       longDesc: "รับเหมาเดินสายไฟและสายแลนคอมพิวเตอร์ (Cat6/Cat7) ทั้งภายในและภายนอกอาคารด้วยท่อร้อยสายคุณภาพดี มีความประณีตในการเข้ามุมและจัดเก็บสายอย่างเป็นระบบตามมาตรฐานงานวิศวกรรมไฟฟ้า ปลอดภัยและดูเรียบร้อยสบายตา",
       icon: "Cable",
-      image: "https://images.unsplash.com/photo-1544724480-82373a543f21?auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "main-panel",
@@ -199,7 +199,7 @@ export const BRAND_CONFIG = {
       category: "electrical",
       title: "งานเดินระบบท่อร้อยสายและจัดระเบียบตู้ควบคุมไฟหลัก",
       desc: "เดินท่อเหล็ก EMT ร้อยสายไฟภายในบ้านเดี่ยวสไตล์โมเดิร์น พร้อมติดตั้งและตรวจรับระบบตู้คอนซูมเมอร์ควบคุมไฟแยกชั้นอย่างชัดเจน ปลอดภัยตามมาตรฐานสากล",
-      image: "https://images.unsplash.com/photo-1544724480-82373a543f21?auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: "p2",
@@ -258,7 +258,7 @@ export const BRAND_CONFIG = {
       id: "a3",
       title: "เดินไฟลอย vs ฝังผนัง: เลือกแบบไหนดี? เจาะลึกข้อดี-ข้อเสีย ที่เจ้าของบ้านต้องรู้",
       date: "25 ธันวาคม 2568",
-      image: "https://images.unsplash.com/photo-1544724480-82373a543f21?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=600&q=80",
       desc: "เปรียบเทียบการเดินสายไฟในบ้านทั้งสองแบบ เจาะลึกข้อดีเรื่องความสวยงาม ความง่ายในการซ่อมบำรุง และค่าใช้จ่าย เพื่อเป็นคู่มือตัดสินใจสำหรับผู้ที่กำลังสร้างบ้านหรือรีโนเวท"
     }
   ],

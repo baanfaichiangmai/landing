@@ -80,9 +80,14 @@ export default function Header() {
           </a>
         </div>
 
-        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="mobile-header-buttons">
+          <a href={`tel:${BRAND_CONFIG.phoneRaw}`} className="mobile-phone-link" aria-label="Call Us">
+            <Phone size={20} />
+          </a>
+          <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
     </header>
   );

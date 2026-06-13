@@ -297,6 +297,10 @@ h4 { font-size: 1.25rem; }
   flex-shrink: 0;
 }
 
+.mobile-header-buttons {
+  display: none;
+}
+
 .menu-toggle {
   display: none;
   background: none;
@@ -307,6 +311,31 @@ h4 { font-size: 1.25rem; }
 }
 
 @media (max-width: 1150px) {
+  .mobile-header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .mobile-phone-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-full);
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border: 1px solid var(--primary-glow);
+    transition: var(--transition-fast);
+  }
+  
+  .mobile-phone-link:hover, .mobile-phone-link:active {
+    background-color: var(--primary);
+    color: var(--dark);
+    transform: scale(1.05);
+  }
+
   .menu-toggle {
     display: block;
   }
