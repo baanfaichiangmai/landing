@@ -1,6 +1,37 @@
-export async function onRequestPost(context) {
-  const { request, env } = context;
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
 
+    // Enable CORS for localhost testing
+    if (request.method === 'OPTIONS') {
+      return new Response(null, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type'
+        }
+      });
+    }
+
+    // Route API request
+    if (url.pathname === '/api/contact' && request.method === 'POST') {
+      const response = await handleContact(request, env);
+      // Add CORS headers to API responses
+      const newHeaders = new Headers(response.headers);
+      newHeaders.set('Access-Control-Allow-Origin', '*');
+      return new Response(response.body, {
+        status: response.status,
+        statusText: response.statusText,
+        headers: newHeaders
+      });
+    }
+
+    // Otherwise, serve static assets from the ASSETS binding
+    return await env.ASSETS.fetch(request);
+  }
+};
+
+async function handleContact(request, env) {
   // 1. Get environment variables
   const resendApiKey = env.RESEND_API_KEY;
   const senderEmail = env.SENDER_EMAIL || 'noreply@baanfaichiangmai.com';
