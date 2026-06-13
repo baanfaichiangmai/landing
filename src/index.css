@@ -3,19 +3,19 @@
 :root {
   --font-primary: 'Prompt', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
-  /* HSL Color System */
-  --primary-h: 38;
+  /* HSL Color System - Light Blue / Dark Navy / White Theme */
+  --primary-h: 200; /* Sky Blue */
   --primary-s: 95%;
   --primary-l: 50%;
-  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l)); /* Amber/Orange */
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
   --primary-hover: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 5%));
   --primary-light: hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.1);
   --primary-glow: hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.35);
 
-  --dark-h: 224;
-  --dark-s: 71%;
-  --dark-l: 4%;
-  --dark: hsl(var(--dark-h), var(--dark-s), var(--dark-l)); /* Deep Navy Black */
+  --dark-h: 220; /* Deep Navy Blue */
+  --dark-s: 85%;
+  --dark-l: 8%;
+  --dark: hsl(var(--dark-h), var(--dark-s), var(--dark-l));
   --dark-soft: hsl(var(--dark-h), var(--dark-s), calc(var(--dark-l) + 8%));
   --dark-card: hsl(var(--dark-h), var(--dark-s), calc(var(--dark-l) + 12%));
 

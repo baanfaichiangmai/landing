@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smartelectric.pages.dev/sitemap.xml
+Sitemap: https://baanfaichiangmai.com/sitemap.xml

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { BRAND_CONFIG } from '../src/config.js';
 
-const siteUrl = BRAND_CONFIG.siteUrl || 'https://smartelectric.pages.dev';
+const siteUrl = BRAND_CONFIG.siteUrl || 'https://baanfaichiangmai.com';
 const cleanSiteUrl = siteUrl.endsWith('/') ? siteUrl.slice(0, -1) : siteUrl;
 
 // YYYY-MM-DD format
@@ -70,7 +70,7 @@ if (fs.existsSync(htmlPath)) {
   // We match http/https followed by pages.dev or any other domain previously set in the index.html
   // To make it very robust, we will look for whatever is inside the canonical link and replace it,
   // or simple search-replace the default 'https://smartelectric.pages.dev' pattern.
-  const defaultDomain = 'https://smartelectric.pages.dev';
+  const defaultDomain = 'https://baanfaichiangmai.com';
   
   // Read what domain is currently in index.html canonical link to replace it correctly if it was already updated before
   const canonicalMatch = /<link rel="canonical" href="([^"]+)"/.exec(htmlContent);
