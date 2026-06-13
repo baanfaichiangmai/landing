@@ -1352,6 +1352,10 @@ textarea.form-control {
   color: #ffffff;
 }
 
+.footer-logo img {
+  filter: invert(1);
+}
+
 .footer-logo span {
   color: var(--primary);
 }
