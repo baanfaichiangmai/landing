@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Debug / Temporary assets
+debug/*.png
+debug/logo-pack/
+pnpm-workspace.yaml
+

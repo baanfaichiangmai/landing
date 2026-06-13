@@ -18,7 +18,7 @@ export const BRAND_CONFIG = {
   responseTime: "สแตนด์บายด่วน พร้อมถึงหน้างานภายใน 1 ชั่วโมง",
 
   // 3. ภาพประกอบหลัก (Images & Logos)
-  logoUrl: "", // ปล่อยว่างเพื่อใช้ Text Logo ที่ดีไซน์หรูหรา หากมี URL สามารถมาป้อนทีหลังได้
+  logoUrl: "/full-logo.png", // โลโก้แบรนด์อย่างเป็นทางการจาก logo-pack
   heroBgImage: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80", // ภาพช่างไฟฟ้าคุณภาพสูง
   aboutImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", // ภาพช่างในหน้าเกี่ยวกับเรา
 

@@ -11,9 +11,15 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Column 1: Brand & Logo */}
           <div className="footer-brand">
-            <Link to="/" className="footer-logo">
-              <Zap size={28} fill="var(--primary)" color="var(--primary)" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.4rem' }} />
-              {BRAND_CONFIG.title.split(' ')[0]} <span>{BRAND_CONFIG.title.split(' ').slice(1).join(' ')}</span>
+            <Link to="/" className="footer-logo" style={{ display: 'inline-block' }}>
+              {BRAND_CONFIG.logoUrl ? (
+                <img src={BRAND_CONFIG.logoUrl} alt={BRAND_CONFIG.title} style={{ height: '3rem', objectFit: 'contain' }} />
+              ) : (
+                <>
+                  <Zap size={28} fill="var(--primary)" color="var(--primary)" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.4rem' }} />
+                  {BRAND_CONFIG.title.split(' ')[0]} <span>{BRAND_CONFIG.title.split(' ').slice(1).join(' ')}</span>
+                </>
+              )}
             </Link>
             <p className="footer-desc">
               {BRAND_CONFIG.subtitle}
