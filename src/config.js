@@ -5,13 +5,13 @@ export const BRAND_CONFIG = {
   siteUrl: "https://baanfaichiangmai.com", // โดเมนหลักของเว็บไซต์สำหรับทำ SEO
   subtitle: "บริการช่างไฟฟ้ามาตรฐานสูง รวดเร็ว ปลอดภัย ครบวงจร ทั่วเชียงใหม่และพื้นที่ใกล้เคียง",
   tagline: "ช่างไฟฟ้าและเน็ตเวิร์คมืออาชีพเชียงใหม่ เรียกด่วนถึงหน้างานใน 1 ชม.",
-  
+
   // 2. ข้อมูลการติดต่อและลิงก์โซเชียล (Contact & Social Links)
   phone: "02-114-7345",
   phoneRaw: "021147345", // สำหรับ href="tel:..."
-  lineId: "@baanfaichiangmai",
-  lineLink: "https://line.me/ti/p/~@baanfaichiangmai",
-  facebook: "https://facebook.com/baanfaichiangmai",
+  lineId: "@baanmefai",
+  lineLink: "https://line.me/ti/p/~@baanmefai",
+  facebook: "https://www.facebook.com/baanmefai",
   email: "baanfaichiangmai@gmail.com",
   address: "ให้บริการครอบคลุมทั่วจังหวัดเชียงใหม่ และพื้นที่ใกล้เคียง",
   workingHours: "เปิดให้บริการทุกวัน จันทร์ - อาทิตย์ ตลอด 24 ชั่วโมง",
