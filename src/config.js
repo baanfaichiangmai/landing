@@ -7,8 +7,8 @@ export const BRAND_CONFIG = {
   tagline: "ช่างไฟฟ้าและเน็ตเวิร์คมืออาชีพเชียงใหม่ เรียกด่วนถึงหน้างานใน 1 ชม.",
 
   // 2. ข้อมูลการติดต่อและลิงก์โซเชียล (Contact & Social Links)
-  phone: "02-114-7345",
-  phoneRaw: "021147345", // สำหรับ href="tel:..."
+  phone: "098-777-6655",
+  phoneRaw: "0987776655", // สำหรับ href="tel:..."
   lineId: "@baanmefai",
   lineLink: "https://line.me/ti/p/~@baanmefai",
   facebook: "https://www.facebook.com/baanmefai",
