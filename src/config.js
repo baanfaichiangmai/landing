@@ -11,8 +11,8 @@ export const BRAND_CONFIG = {
   phoneRaw: "0987484274", // สำหรับ href="tel:..."
   phone2: "098-165-1538",
   phone2Raw: "0981651538", // สำหรับ href="tel:..."
-  lineId: "@baanmefai",
-  lineLink: "https://line.me/ti/p/~@baanmefai1",
+  lineId: "@baanfai",
+  lineLink: "https://line.me/ti/p/~@baanfai",
   facebook: "https://www.facebook.com/share/18JPZ8FqXY/",
   email: "baanfaichiangmai@gmail.com",
   address: "39/1 ม.9 ต.สบเปิง อ.แม่แตง จ.เชียงใหม่ 50330",
