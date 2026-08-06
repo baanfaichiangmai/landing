@@ -27,7 +27,7 @@ export const BRAND_CONFIG = {
   // 3. ภาพประกอบหลัก (Images & Logos)
   logoUrl: "/full-logo.png", // โลโก้แบรนด์อย่างเป็นทางการจาก logo-pack
   heroBgImage: "/hero-bg.webp", // ภาพพื้นหลัง Hero แบบ WebP
-  aboutImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", // ภาพช่างในหน้าเกี่ยวกับเรา
+  aboutImage: "/images/about-banner.webp", // ภาพช่างในหน้าเกี่ยวกับเรา
 
   // 4. รายการบริการหลัก 8 รายการ (Services Data)
   services: [
@@ -74,7 +74,7 @@ export const BRAND_CONFIG = {
       shortDesc: "วางระบบเครือข่ายอินเทอร์เน็ต เดินสายแลน ติดตั้ง Access Point เพื่อให้ Wi-Fi เร็วแรงทั่วทุกจุดในบ้าน",
       longDesc: "บริการตรวจสอบจุดอับสัญญาณอินเทอร์เน็ต วางแผนและติดตั้งเราเตอร์ Access Point เพื่อขยายพื้นที่ครอบคลุมของสัญญาณ Wi-Fi ความเร็วสูงทั่วทั้งบ้านและสำนักงาน จัดการระบบสายแลนและจัดระเบียบตู้อุปกรณ์เน็ตเวิร์กให้เรียบร้อย",
       icon: "Wifi",
-      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80"
+      image: "/images/network-wifi.webp"
     },
     {
       id: "smart-home",
@@ -83,7 +83,7 @@ export const BRAND_CONFIG = {
       shortDesc: "ติดตั้งอุปกรณ์บ้านอัจฉริยะ สวิตช์สัมผัส กลอนประตูดิจิตอล และระบบสั่งงานด้วยเสียง/มือถือ",
       longDesc: "เปลี่ยนบ้านคุณให้ทันสมัยด้วยระบบบ้านอัจฉริยะ ติดตั้งสวิตช์ไฟอัจฉริยะ เซ็นเซอร์ตรวจจับความเคลื่อนไหว ระบบสั่งงานด้วยเสียงผ่าน Google Home/Alexa ระบบรดน้ำต้นไม้อัตโนมัติ และกลอนประตูดิจิตอล (Smart Digital Door Lock) ควบคุมผ่านมือถือได้จากทุกที่",
       icon: "Home",
-      image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80"
+      image: "/images/smart-home.webp"
     },
     {
       id: "cctv-security",
@@ -201,42 +201,42 @@ export const BRAND_CONFIG = {
       category: "electrical",
       title: "งานเดินระบบท่อร้อยสายและจัดระเบียบตู้ควบคุมไฟหลัก",
       desc: "เดินท่อเหล็ก EMT ร้อยสายไฟภายในบ้านเดี่ยวสไตล์โมเดิร์น พร้อมติดตั้งและตรวจรับระบบตู้คอนซูมเมอร์ควบคุมไฟแยกชั้นอย่างชัดเจน ปลอดภัยตามมาตรฐานสากล",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+      image: "/images/electrical-panel.webp"
     },
     {
       id: "p2",
       category: "automation",
       title: "งานติดตั้งระบบสมาร์ทโฮมและระบบไฟอัจฉริยะ",
       desc: "ติดตั้งสวิตช์ไฟระบบสัมผัสควบคุมผ่านแอปพลิเคชันมือถือ เชื่อมโยงระบบเปิด-ปิดไฟอัตโนมัติเมื่อตรวจจับความเคลื่อนไหว และระบบล็อคประตูดิจิตอลสำหรับบ้านอัจฉริยะ",
-      image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80"
+      image: "/images/smart-home.webp"
     },
     {
       id: "p3",
       category: "network",
       title: "งานวางโครงสร้างระบบสายแลนและตู้ Rack สัญญาณ",
       desc: "ติดตั้งเดินสายแลน Cat6 ความเร็วสูงเชื่อมโยงจุด Access Point 4 จุดรอบอาคารสำนักงาน พร้อมจัดระเบียบสายแลนเข้าตู้ Rack อุปกรณ์เน็ตเวิร์กอย่างสวยงามเป็นระบบ",
-      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80"
+      image: "/images/network-wifi.webp"
     },
     {
       id: "p4",
       category: "electrical",
       title: "งานติดตั้งโคมไฟตกแต่งห้องโถงและโคมไฟระย้าหรู",
       desc: "ติดตั้งโคมไฟระย้าคริสตัลขนาดใหญ่กลางห้องโถงเพดานสูงพร้อมทดสอบระบบหรี่แสงไฟ และติดตั้งไฟกิ่งส่องผนังเพื่อตกแต่งบ้านให้มีความหรูหราพรีเมียม",
-      image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=600&q=80"
+      image: "/images/chandelier-light.webp"
     },
     {
       id: "p5",
       category: "automation",
       title: "งานติดตั้งระบบกล้องวงจรปิดรอบบ้านแบบไร้สายและเดินสายกึ่งซ่อน",
       desc: "ติดตั้งกล้องรักษาความปลอดภัยภายนอกรอบบ้าน 6 จุด มุมมองกว้าง คมชัดสูง ทนแดดทนฝน พร้อมเซ็ตระบบบันทึกและเชื่อมเข้ากับสมาร์ทโฟนของเจ้าของบ้าน",
-      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80"
+      image: "/images/cctv-camera.webp"
     },
     {
       id: "p6",
       category: "electrical",
       title: "งานซ่อมเปลี่ยนเต้ารับและสวิตช์บอร์ดที่ชำรุดเสียหาย",
       desc: "เข้าหน้างานด่วนเปลี่ยนเต้ารับไฟชนิดม่านนิรภัยเพื่อความปลอดภัยของเด็กเล็ก พร้อมย้ายสวิตช์และเดินหน้ากากครอบป้องกันน้ำซึมภายนอกอาคาร",
-      image: "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=600&q=80"
+      image: "/images/switch-outlets.webp"
     }
   ],
 
@@ -246,21 +246,21 @@ export const BRAND_CONFIG = {
       id: "a1",
       title: "5 ปัญหาไฟฟ้าที่พบบ่อยในบ้าน พร้อมวิธีแก้เบื้องต้น",
       date: "16 มีนาคม 2569",
-      image: "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=600&q=80",
+      image: "/images/switch-outlets.webp",
       desc: "รวบรวมปัญหาไฟฟ้าขัดข้องยอดฮิตที่เจ้าของบ้านต้องพบเจอ เช่น ปลั๊กไฟหลวม เบรกเกอร์ตัดบ่อย หรือไฟดับบางจุด พร้อมแนวทางแก้ไขปัญหาอย่างปลอดภัยด้วยตัวเองก่อนเรียกช่าง"
     },
     {
       id: "a2",
       title: "Volt Amp Watt คืออะไร? สรุปความแตกต่างฉบับเข้าใจง่ายสำหรับเจ้าของบ้าน",
       date: "25 ธันวาคม 2568",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+      image: "/images/electrical-panel.webp",
       desc: "ทำความเข้าใจศัพท์ไฟฟ้าพื้นฐาน โวลต์ (Volt) แอมป์ (Amp) และวัตต์ (Watt) แตกต่างกันอย่างไร เพื่อให้คุณเลือกซื้อเครื่องใช้ไฟฟ้าและคำนวณการใช้ไฟในบ้านได้อย่างถูกต้องและประหยัด"
     },
     {
       id: "a3",
       title: "เดินไฟลอย vs ฝังผนัง: เลือกแบบไหนดี? เจาะลึกข้อดี-ข้อเสีย ที่เจ้าของบ้านต้องรู้",
       date: "25 ธันวาคม 2568",
-      image: "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=600&q=80",
+      image: "/images/switch-outlets.webp",
       desc: "เปรียบเทียบการเดินสายไฟในบ้านทั้งสองแบบ เจาะลึกข้อดีเรื่องความสวยงาม ความง่ายในการซ่อมบำรุง และค่าใช้จ่าย เพื่อเป็นคู่มือตัดสินใจสำหรับผู้ที่กำลังสร้างบ้านหรือรีโนเวท"
     }
   ],

@@ -196,7 +196,7 @@ export default function Contact() {
             {/* Service Area Simulated Map Overlay */}
             <div className="contact-map-sim">
               <img 
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" 
+                src="/images/contact-map-preview.webp" 
                 alt="ที่อยู่ 39/1 ม.9 ต.สบเปิง อ.แม่แตง จ.เชียงใหม่" 
                 loading="lazy" 
               />
