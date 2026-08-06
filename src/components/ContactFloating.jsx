@@ -24,7 +24,7 @@ export default function ContactFloating() {
         aria-label="Call Direct"
       >
         <Phone size={24} fill="var(--dark)" />
-        <span className="floating-tooltip">โทรติดต่อ {BRAND_CONFIG.phone}</span>
+        <span className="floating-tooltip">โทรติดต่อ {BRAND_CONFIG.phone} / {BRAND_CONFIG.phone2}</span>
       </a>
     </div>
   );

@@ -131,9 +131,12 @@ export default function Contact() {
                   </div>
                   <div className="contact-method-text">
                     <h5>เบอร์โทรศัพท์ติดต่อด่วน</h5>
-                    <p>
+                    <p style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
                       <a href={`tel:${BRAND_CONFIG.phoneRaw}`} style={{ color: 'var(--dark)' }}>
                         {BRAND_CONFIG.phone}
+                      </a>
+                      <a href={`tel:${BRAND_CONFIG.phone2Raw}`} style={{ color: 'var(--dark)' }}>
+                        {BRAND_CONFIG.phone2}
                       </a>
                     </p>
                   </div>
@@ -182,7 +185,7 @@ export default function Contact() {
                     <MapPin size={18} />
                   </div>
                   <div className="contact-method-text">
-                    <h5>พื้นที่การให้บริการหลัก</h5>
+                    <h5>ที่อยู่สำนักงาน / พื้นที่ให้บริการ</h5>
                     <p>{BRAND_CONFIG.address}</p>
                   </div>
                 </div>
@@ -194,13 +197,13 @@ export default function Contact() {
             <div className="contact-map-sim">
               <img 
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" 
-                alt="พื้นที่การให้บริการครอบคลุมกรุงเทพฯและปริมณฑล" 
+                alt="ที่อยู่ 39/1 ม.9 ต.สบเปิง อ.แม่แตง จ.เชียงใหม่" 
                 loading="lazy" 
               />
               <div className="map-overlay">
                 <div>
                   <MapPin size={36} fill="var(--primary)" color="var(--dark)" style={{ display: 'inline-block', marginBottom: '0.5rem' }} />
-                  <p>ให้บริการทั่วกรุงเทพมหานคร<br />และจังหวัดปริมณฑล</p>
+                  <p>39/1 ม.9 ต.สบเปิง<br />อ.แม่แตง จ.เชียงใหม่</p>
                 </div>
               </div>
             </div>

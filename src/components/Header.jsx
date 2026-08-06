@@ -64,6 +64,9 @@ export default function Header() {
               <a href={`tel:${BRAND_CONFIG.phoneRaw}`} className="btn btn-primary" style={{ width: '100%' }}>
                 <Phone size={18} /> โทรด่วน: {BRAND_CONFIG.phone}
               </a>
+              <a href={`tel:${BRAND_CONFIG.phone2Raw}`} className="btn btn-primary" style={{ width: '100%', backgroundColor: '#0284c7', borderColor: '#0284c7' }}>
+                <Phone size={18} /> โทรด่วน: {BRAND_CONFIG.phone2}
+              </a>
               <a href={BRAND_CONFIG.lineLink} target="_blank" rel="noopener noreferrer" className="btn btn-dark" style={{ width: '100%', backgroundColor: '#06c755', borderColor: '#06c755' }}>
                 <MessageSquare size={18} /> ทักแชท Line
               </a>
@@ -73,7 +76,7 @@ export default function Header() {
 
         <div className="nav-actions">
           <a href={`tel:${BRAND_CONFIG.phoneRaw}`} className="btn btn-secondary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.875rem' }}>
-            <Phone size={16} /> โทร: {BRAND_CONFIG.phone}
+            <Phone size={16} /> โทร: {BRAND_CONFIG.phone}, {BRAND_CONFIG.phone2}
           </a>
           <a href={BRAND_CONFIG.lineLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.875rem' }}>
             <MessageSquare size={16} /> Line

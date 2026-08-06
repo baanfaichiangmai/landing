@@ -9,11 +9,17 @@ export const BRAND_CONFIG = {
   // 2. ข้อมูลการติดต่อและลิงก์โซเชียล (Contact & Social Links)
   phone: "098-748-4274",
   phoneRaw: "0987484274", // สำหรับ href="tel:..."
+  phone2: "098-165-1538",
+  phone2Raw: "0981651538", // สำหรับ href="tel:..."
   lineId: "@baanmefai",
   lineLink: "https://line.me/ti/p/~@baanmefai1",
   facebook: "https://www.facebook.com/share/18JPZ8FqXY/",
   email: "baanfaichiangmai@gmail.com",
-  address: "ให้บริการครอบคลุมทั่วจังหวัดเชียงใหม่ และพื้นที่ใกล้เคียง",
+  address: "39/1 ม.9 ต.สบเปิง อ.แม่แตง จ.เชียงใหม่",
+  geo: {
+    latitude: 19.1176,
+    longitude: 98.8687
+  },
   workingHours: "เปิดให้บริการทุกวัน จันทร์ - อาทิตย์ ตลอด 24 ชั่วโมง",
   responseTime: "สแตนด์บายด่วน พร้อมถึงหน้างานภายใน 1 ชั่วโมง",
 

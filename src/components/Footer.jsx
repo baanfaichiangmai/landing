@@ -64,8 +64,11 @@ export default function Footer() {
               <div className="footer-contact-item">
                 <Phone size={16} className="footer-contact-item-icon" />
                 <div>
-                  <a href={`tel:${BRAND_CONFIG.phoneRaw}`} style={{ fontWeight: '600', color: '#ffffff' }}>
+                  <a href={`tel:${BRAND_CONFIG.phoneRaw}`} style={{ fontWeight: '600', color: '#ffffff', display: 'block' }}>
                     {BRAND_CONFIG.phone}
+                  </a>
+                  <a href={`tel:${BRAND_CONFIG.phone2Raw}`} style={{ fontWeight: '600', color: '#ffffff', display: 'block', marginTop: '0.2rem' }}>
+                    {BRAND_CONFIG.phone2}
                   </a>
                 </div>
               </div>
