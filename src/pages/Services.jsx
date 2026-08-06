@@ -112,7 +112,7 @@ export default function Services() {
                       top: '1.5rem',
                       left: '1.5rem',
                       backgroundColor: 'var(--primary)',
-                      color: 'var(--dark)',
+                      color: '#ffffff',
                       padding: '0.75rem',
                       borderRadius: 'var(--radius-md)',
                       display: 'flex',
@@ -121,7 +121,7 @@ export default function Services() {
                       boxShadow: 'var(--shadow-md)'
                     }}
                   >
-                    {renderIcon(service.icon, 28, 'var(--dark)')}
+                    {renderIcon(service.icon, 28, '#ffffff')}
                   </div>
                 </div>
 
@@ -140,7 +140,7 @@ export default function Services() {
                       to={`/contact?service=${encodeURIComponent(service.title)}`} 
                       className="btn btn-primary"
                     >
-                      {renderIcon('Calendar', 18, 'var(--dark)')} จองบริการนี้
+                      {renderIcon('Calendar', 18, '#ffffff')} จองบริการนี้
                     </Link>
                     <a 
                       href={`tel:${BRAND_CONFIG.phoneRaw}`} 

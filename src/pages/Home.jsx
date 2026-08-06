@@ -41,7 +41,7 @@ export default function Home() {
             <p>{BRAND_CONFIG.subtitle}</p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">
-                {renderIcon('Calendar', 18, 'var(--dark)')} จองคิวช่าง / นัดหมาย
+                {renderIcon('Calendar', 18, '#ffffff')} จองคิวช่าง / นัดหมาย
               </Link>
               <a href={`tel:${BRAND_CONFIG.phoneRaw}`} className="btn btn-outline-white">
                 {renderIcon('Phone', 18, '#ffffff')} โทรด่วน: {BRAND_CONFIG.phone}
@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="service-image-wrapper">
                   <img src={service.image} alt={service.title} loading="lazy" />
                   <div className="service-icon-badge">
-                    {renderIcon(service.icon, 24, 'var(--dark)')}
+                    {renderIcon(service.icon, 24, '#ffffff')}
                   </div>
                 </div>
                 <div className="service-card-content">
