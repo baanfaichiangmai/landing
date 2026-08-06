@@ -10,7 +10,7 @@ export const BRAND_CONFIG = {
   phone: "098-748-4274",
   phoneRaw: "0987484274", // สำหรับ href="tel:..."
   lineId: "@baanmefai",
-  lineLink: "https://line.me/ti/p/~@baanmefai",
+  lineLink: "https://line.me/ti/p/~@baanmefai1",
   facebook: "https://www.facebook.com/share/18JPZ8FqXY/",
   email: "baanfaichiangmai@gmail.com",
   address: "ให้บริการครอบคลุมทั่วจังหวัดเชียงใหม่ และพื้นที่ใกล้เคียง",
