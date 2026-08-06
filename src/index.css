@@ -612,37 +612,15 @@ h4 {
   color: var(--primary);
 }
 
-/* Highlights Section / Why Choose Us */
 .highlights-container {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.highlights-image-side {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-.highlights-image-side::after {
-  content: '';
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  border: 2px solid var(--primary);
-  border-radius: calc(var(--radius-lg) - 8px);
-  pointer-events: none;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .highlights-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
 }
 
 .highlight-item {
@@ -1612,17 +1590,10 @@ textarea.form-control {
   flex-shrink: 0;
 }
 
-/* Safety Standards Styling */
 .safety-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .safety-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .safety-card {

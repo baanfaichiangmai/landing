@@ -57,12 +57,6 @@ export default function About() {
           </div>
 
           <div className="about-feature-card">
-            <Award size={36} className="about-feature-icon" />
-            <h4>ติดกล้อง Body Camera</h4>
-            <p>ช่างติดตั้งกล้องบันทึกภาพตลอดการทำงาน เพื่อความโปร่งใส ปลอดภัย และบันทึกขั้นตอนการปฏิบัติงานเพื่อตรวจสอบ</p>
-          </div>
-
-          <div className="about-feature-card">
             <Heart size={36} className="about-feature-icon" />
             <h4>ความเรียบร้อยและมารยาทดี</h4>
             <p>อบรมมารยาทอย่างเข้มงวด ทำงานสะอาด ปัดกวาดเช็ดถูฝุ่นปูนและเก็บเศษสายไฟเรียบร้อยก่อนปิดงานเสมอ</p>

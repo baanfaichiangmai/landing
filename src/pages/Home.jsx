@@ -51,20 +51,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Trust Partner Logos */}
-      <section className="trust-logos">
-        <div className="container">
-          <div className="logos-grid">
-            <div className="logo-item">CJ MORE</div>
-            <div className="logo-item">PTT GROUP</div>
-            <div className="logo-item">เมืองไทยประกันภัย</div>
-            <div className="logo-item">สมหวังเงินสั่งได้</div>
-            <div className="logo-item">ปตท.</div>
-            <div className="logo-item">THAIFOODS</div>
-          </div>
-        </div>
-      </section>
-
       {/* 3. Featured Services Teaser */}
       <section className="section">
         <div className="container">
@@ -130,14 +116,7 @@ export default function Home() {
           </div>
 
           <div className="highlights-container">
-            <div className="highlights-image-side">
-              <img 
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" 
-                alt="ช่างไฟฟ้ามืออาชีพสวมชุดนิรภัย" 
-                loading="lazy"
-              />
-            </div>
-            
+
             <div className="highlights-list">
               {BRAND_CONFIG.highlights.map((item, index) => (
                 <div key={item.id} className="highlight-item">
