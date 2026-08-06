@@ -15,7 +15,8 @@ export const BRAND_CONFIG = {
   lineLink: "https://line.me/ti/p/~@baanmefai1",
   facebook: "https://www.facebook.com/share/18JPZ8FqXY/",
   email: "baanfaichiangmai@gmail.com",
-  address: "39/1 ม.9 ต.สบเปิง อ.แม่แตง จ.เชียงใหม่",
+  address: "39/1 ม.9 ต.สบเปิง อ.แม่แตง จ.เชียงใหม่ 50330",
+  postalCode: "50330",
   geo: {
     latitude: 19.1176,
     longitude: 98.8687
