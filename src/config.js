@@ -38,7 +38,7 @@ export const BRAND_CONFIG = {
       shortDesc: "แก้ไขปัญหาระบบไฟฟ้าขัดข้องฉุกเฉิน ไฟดับบางจุด ไฟช็อต เบรกเกอร์ทริป ตรวจสอบกลิ่นไหม้ใน 1 ชม.",
       longDesc: "บริการแก้ไขระบบไฟฟ้าขัดข้องฉุกเฉินตลอด 24 ชั่วโมง ไม่ว่าจะเป็นปัญหาไฟดับทั้งบ้านหรือบางจุด ไฟฟ้าลัดวงจร เบรกเกอร์ตัดบ่อยครั้ง เต้ารับไฟฟ้าละลาย หรือเกิดประกายไฟตามจุดต่างๆ ทีมช่างผู้ชำนาญการพร้อมเข้าตรวจสอบหน้างานเพื่อความปลอดภัยอย่างเร่งด่วน",
       icon: "Zap",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+      image: "/services/service-urgent-repair.webp"
     },
     {
       id: "outlets-switches",
@@ -47,7 +47,7 @@ export const BRAND_CONFIG = {
       shortDesc: "เพิ่ม ย้าย เปลี่ยนจุดเต้ารับ สวิตช์ไฟ เพื่อความสะดวกและปลอดภัยในการใช้งานเครื่องใช้ไฟฟ้า",
       longDesc: "รับติดตั้ง เพิ่มจุด ย้ายตำแหน่ง หรือเปลี่ยนหน้ากากปลั๊กไฟและสวิตช์ไฟที่ชำรุดเสียหาย ด้วยอุปกรณ์ที่ได้มาตรฐาน มอก. พร้อมการเข้าสายและเดินระบบสายไฟที่ถูกต้อง ปลอดภัย ป้องกันปัญหาไฟฟ้าลัดวงจรในระยะยาว",
       icon: "ToggleRight",
-      image: "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=600&q=80"
+      image: "/services/service-outlets-switches.webp"
     },
     {
       id: "wiring-cabling",
@@ -56,7 +56,7 @@ export const BRAND_CONFIG = {
       shortDesc: "เดินสายไฟฟ้าและสายแลนภายในบ้าน/สำนักงาน ทั้งแบบเดินลอยและฝังผนังอย่างเป็นระเบียบเรียบร้อย",
       longDesc: "รับเหมาเดินสายไฟและสายแลนคอมพิวเตอร์ (Cat6/Cat7) ทั้งภายในและภายนอกอาคารด้วยท่อร้อยสายคุณภาพดี มีความประณีตในการเข้ามุมและจัดเก็บสายอย่างเป็นระบบตามมาตรฐานงานวิศวกรรมไฟฟ้า ปลอดภัยและดูเรียบร้อยสบายตา",
       icon: "Cable",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
+      image: "/services/service-wiring-cabling.webp"
     },
     {
       id: "main-panel",
@@ -65,7 +65,7 @@ export const BRAND_CONFIG = {
       shortDesc: "ออกแบบและจัดระเบียบตู้คอนซูมเมอร์ยูนิต ติดตั้งเครื่องตัดไฟรั่ว (RCBO) เพื่อป้องกันชีวิตและทรัพย์สิน",
       longDesc: "บริการติดตั้ง ปรับปรุง และจัดระเบียบตู้ควบคุมระบบไฟฟ้าภายในบ้าน (Consumer Unit) รวมถึงติดตั้งอุปกรณ์ป้องกันไฟดูด ไฟรั่ว ไฟช็อต (RCBO/Safe-T-Cut) เพื่อป้องกันภัยจากกระแสไฟฟ้าและรักษาชีวิตและทรัพย์สินของคนในครอบครัว",
       icon: "Cpu",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
+      image: "/services/service-main-panel.webp"
     },
     {
       id: "network-wifi",
@@ -92,7 +92,7 @@ export const BRAND_CONFIG = {
       shortDesc: "ติดตั้งระบบกล้องวงจรปิดความคมชัดสูง เชื่อมต่อดูออนไลน์ผ่านมือถือได้แบบเรียลไทม์ 24 ชม.",
       longDesc: "บริการออกแบบและติดตั้งระบบกล้องวงจรปิด (CCTV) ทั้งระบบ IP Camera และ Analog ความคมชัดระดับ 2K/4K พร้อมการตั้งค่าบันทึกภาพและตั้งค่าให้สามารถเรียกดูภาพสดและย้อนหลังผ่านหน้าจอมือถือได้ตลอด 24 ชั่วโมงจากทุกที่ทั่วโลก",
       icon: "ShieldAlert",
-      image: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=600&q=80"
+      image: "/services/service-cctv-security.webp"
     },
     {
       id: "appliance-install",
@@ -101,7 +101,7 @@ export const BRAND_CONFIG = {
       shortDesc: "ติดตั้งเครื่องทำน้ำอุ่น พัดลมระบายอากาศ โคมไฟระย้า ไฟกิ่ง และอุปกรณ์ไฟฟ้าทุกชนิดโดยช่างผู้เชี่ยวชาญ",
       longDesc: "บริการติดตั้งอุปกรณ์ไฟฟ้าประเภทต่างๆ ภายในบ้าน เช่น เครื่องทำน้ำอุ่นพร้อมเดินสายดินอย่างปลอดภัย พัดลมดูดอากาศในห้องน้ำ/ห้องครัว โคมไฟระย้าดีไซน์หรูหรา ไฟกิ่ง สปอตไลท์สนาม และระบบไฟตกแต่งสวนภายนอกอาคาร",
       icon: "Wrench",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+      image: "/services/service-appliance-install.webp"
     }
   ],
 
